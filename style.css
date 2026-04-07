@@ -1,0 +1,133 @@
+body{
+    background:#0b0f14;
+    overflow-x:hidden;
+    position: relative;
+}
+
+#rain-container{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.drop{
+    position:absolute;
+    top:-20px;
+    width:2px;
+    height:20px;
+    background:rgba(173,216,230,0.6);
+    animation: fall linear infinite;
+}
+
+.alerta-container{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+display:none;
+
+justify-content:center;
+align-items:center;
+
+background:rgba(0,0,0,0.6);
+
+z-index:9999;
+
+}
+
+
+.alerta-box{
+
+background:white;
+padding:30px;
+
+border-radius:10px;
+
+text-align:center;
+
+min-width:250px;
+
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+
+animation: aparecer 0.3s ease;
+
+}
+
+h1{
+font-weight:700;
+}
+
+h2{
+font-weight:600;
+}
+
+p{
+font-weight:400;
+}
+
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+    background-color: #00bfff; /* Color de fondo */
+    border-radius: 50%;         /* Botones redondos */
+    width: 50px;                /* Tamaño del botón */
+    height: 50px;
+    background-size: 50% 50%;   /* Ajusta tamaño del ícono dentro del botón */
+}
+
+/* Opcional: sombra para más estilo */
+#carouselExampleIndicators .carousel-control-prev-icon:hover,
+#carouselExampleIndicators .carousel-control-next-icon:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.custom-h3 {
+  font-family: 'Montserrat', sans-serif;  /* Tipografía elegante y profesional */
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  text-shadow: 
+    1px 1px 0 #aaa,   /* sombra clara hacia abajo/derecha */
+    2px 2px 0 #888,   /* segunda sombra más profunda */
+    3px 3px 2px rgba(0,0,0,0.4); /* sombra final más difusa para profundidad */
+}
+
+.elegant-h2 {
+  font-family: 'Montserrat', sans-serif; /* Fuente elegante y premium */
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.08); /* Sombra sutil */
+}
+
+.animated-gradient-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(270deg, #00bfff, #0077b6, #00bfff);
+  background-size: 600% 600%; /* Hace que el gradiente se pueda mover */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
